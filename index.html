@@ -1,0 +1,86 @@
+<!--My solution involves creating a responsive navigation bar with a dropdown menu that adapts to different screen sizes. 
+For larger screens, the dropdown menu appears on hover, and for smaller screens, the navigation menu 
+transforms into a mobile-friendly layout with a toggleable side menu. I implemented custom CSS for styling and
+ JavaScript for controlling the opening and closing of the mobile navigation menu and dropdown behavior.-->
+
+ <!--The HTML in my code sets up the structure and content of the webpage, organizing the navigation bar and its 
+ sub-menus so that the layout is clear and functional. For the CSS I used it for styling the elements and 
+ ensuring that everything looks visually appealing, regardless of the device or screen size. 
+ This is done using media queries that adjust the layout for different screen sizes, making the design responsive. 
+And then for the JavaScript it adds interactivity by managing the opening and closing of the mobile menu
+ and controlling the dropdown behavior. This makes the navigation bar more user-friendly, especially on mobile devices.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--HEADER START-->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <!-- Logo section -->
+                <div class="logo">
+                    <a href="#">NavBar</a>
+                </div>
+                 <!-- Hamburger menu icon for mobile view -->
+                <div class="open-nav-menu">
+                    <span>
+
+                    </span>
+                </div>
+                <!-- Overlay for mobile menu when open -->
+                <div class="menu-overlay"> 
+                    
+                </div>
+                <!--NAVIGATION MENU START-->
+                <nav class="nav-menu">
+                    <!-- Close button for mobile menu -->
+                    <div class="close-nav-menu">
+                       <img src="close.svg" alt="close">
+                    </div>
+                    <ul class="menu">
+                        <!-- Navigation items -->
+                        <li class="menu-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About</a>
+                        </li>
+                        <!-- Dropdown menu for Services -->
+                        <li class="menu-item  menu-item-has-child">
+                            <a href="#" data-toggle="sub-menu">Services <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Web Development</a></li>
+                                <li class="menu-item"><a href="#">Mobile App Development</a></li>
+                                <li class="menu-item"><a href="#">UI/UX Design</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- NAVIGATION MENU END -->
+            </div>
+        </div>
+    </header>
+
+    <!--HEADER END-->
+
+
+<!-- HOME SECTION START-->
+<section class="home-section">
+</section>
+<!--HOME SECTION END-->
+
+
+</body>
+</html>
